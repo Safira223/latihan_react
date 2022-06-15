@@ -1,0 +1,19 @@
+state = {
+    showComponent: true,
+  };
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        showComponent: false,
+      });
+    }, 15000);
+  }
+
+        <div>
+          
+
+          <h3>Life Cycle Component</h3>
+          <hr />
+          {this.state.showComponent ? <LifeCycleComp /> : null}
+        </div>
